@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-  background: url(../static/snow.png), url(../static/snow.png), #fefae8 url(../static/SS_Soon.png) bottom left no-repeat;
+  background: url(../static/snow.png), url(../static/snow.png), #fefae8 url(../static/SS_Soon.png) center center no-repeat;
   background-repeat: repeat, repeat, no-repeat;
-  background-size: auto auto, auto auto, contain;
+  background-size: auto auto, auto auto, cover;
   background-attachment: fixed, fixed, fixed;
   animation-name: snow;
   animation-duration: 5s;
@@ -48,9 +48,9 @@ body {
 
 @keyframes snow {
   0% {
-    background-position: 130px 40px, 0 0, 0 0;
+    background-position: 130px 40px, 0 0, center center;
   }
   100% {
-    background-position: 130px 640px, 0 300px, 0 0
+    background-position: 130px 640px, 0 300px, center center;
   }
 }
