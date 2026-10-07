@@ -18,8 +18,8 @@ export const fr: Translations = {
     line: "Ligne {{number}}"
   },
   home: {
-    vanity: "Projet lancé en hiver 2015 par Maël",
-    sponsor: "Faire un don sur GitHub",
+    vanity: "Adapté par Maple pour FCSS",
+    sponsor: "Soutenir le développement sur Ko-fi",
     title: "Planificateur de Secret Santa",
     explanation: [
       "Bienvenue ! Cet outil est fait pour vous aider à organiser vos échanges de cadeaux. Listez simplement vos participants et nous vous constituerons aléatoirement des paires selon les règles que vous aurez définies.",

@@ -14,6 +14,6 @@ await copyFile(
 // Social preview metadata needs a stable, unhashed image URL.
 await mkdir(new URL('../dist/static/', import.meta.url), { recursive: true });
 await copyFile(
-  new URL('../static/cats.png', import.meta.url),
-  new URL('../dist/static/cats.png', import.meta.url),
+  new URL('../static/SS_Soon.png', import.meta.url),
+  new URL('../dist/static/SS_Soon.png', import.meta.url),
 );

@@ -16,8 +16,8 @@ export const en = {
     line: "Line {{number}}"
   },
   home: {
-    vanity: "Project started in winter 2015 by Maël",
-    sponsor: "Support me on GitHub",
+    vanity: "Adapted by Maple for FCSS",
+    sponsor: "Support development on Ko-fi",
     title: "Secret Santa Planner",
     explanation: [
       "Welcome! This tool will help you arrange your holiday gift exchanges. Simply list all participants, and we'll randomly assign pairings according to the rules you set.",

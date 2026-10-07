@@ -105,10 +105,10 @@ export function Home() {
 
   const menuItems = [
     <div className="flex flex-col space-y-2 lg:flex-row lg:space-y-0 lg:space-x-2">
-      <MenuItem key={`vanity`} to="https://bsky.app/profile/mael.dev" icon={<Star className={`text-orange-500`} weight={`fill`}/>}>
+      <MenuItem key={`vanity`} to="https://bsky.app/profile/maplebork.bsky.social" icon={<Star className={`text-orange-500`} weight={`fill`}/>}>
         {t(`home.vanity`)}
       </MenuItem>
-      <MenuItem key={`sponsor`} to="https://github.com/sponsors/arcanis?frequency=one-time&sponsor=arcanis" icon={<Heart className={`text-red-700`} weight={`fill`}/>}>
+      <MenuItem key={`sponsor`} to="https://ko-fi.com/maplebork" icon={<Heart className={`text-red-700`} weight={`fill`}/>}>
         {t(`home.sponsor`)}
       </MenuItem>
     </div>,
@@ -141,7 +141,7 @@ export function Home() {
                   i18nKey="home.explanation"
                   components={{
                     p: <p/>,
-                    githubLink: <a className="text-blue-500 underline" href="https://github.com/arcanis/secretsanta/" target="_blank"/>,
+                    githubLink: <a className="text-blue-500 underline" href="https://github.com/Shirodork/FCSS-Secret-Santa/" target="_blank"/>,
                     exampleLink: <Link className="text-blue-500 underline" to="/pairing?from=Simba&to=c1w%2FUV9lXC12U578BHPYZhXxhsK0fPTqoQDU9CA7W581P%2BM%3D"/>,
                   }}
                 />

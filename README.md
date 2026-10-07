@@ -1,8 +1,13 @@
-# Secret Santa
+# FCSS Secret Santa Planner
 
-<img align="right" height="160" src="https://user-images.githubusercontent.com/1037931/87014534-92e21280-c1cc-11ea-9675-5f2c0f3c287f.png"/>
+<img align="right" height="160" alt="Furry Creative Secret Santa" src="static/SS_Soon.png"/>
 
 Check it live on [shirodork.github.io/FCSS-Secret-Santa/](https://shirodork.github.io/FCSS-Secret-Santa/) 🎄
+
+Adapted by Maple for FCSS from the original [Mael.dev Secret Santa planner](https://mael.dev/secretsanta/), and updated to fit our needs.
+
+FCSS always remains a free event for everyone. If you'd like to help cover
+development costs, you can [donate on Ko-fi](https://ko-fi.com/maplebork).
 
 ## Development
 
@@ -24,8 +29,6 @@ The deployment workflow tests, builds, and publishes `dist` on every push to
 `main`. The build uses the repository name as its base path and creates HTML
 entry points for shared assignment links so they work on direct visits and
 refreshes. For another hosting path, set `VITE_BASE_URL` before building.
-
-Should you appreciate this tool so much that you'd like to thank me, you can either drop a friendly note in this repository's issues, or be a [one-time sponsor](https://github.com/sponsors/arcanis?frequency=one-time&sponsor=arcanis). Either would make my day 😊
 
 <br/>
 
