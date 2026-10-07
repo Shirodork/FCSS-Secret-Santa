@@ -33,18 +33,18 @@ jobs:
           node-version: '20'
 
       - name: Install Dependencies
-        run: corepack enable && yarn
+        run: corepack enable && yarn install --immutable
 
       - name: Run Tests
-        run: yarn vitest
+        run: yarn test
 
       - name: Build
-        run: yarn vite build
+        run: yarn build
         env:
-          VITE_BASE_URL: '/${{ github.event.repository.name }}'
+          VITE_BASE_URL: '/${{ github.event.repository.name }}/'
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -53,4 +53,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4

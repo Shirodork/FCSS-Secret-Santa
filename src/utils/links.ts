@@ -2,7 +2,8 @@ import { encryptText } from "./crypto";
 import { ReceiverData } from "../types";
 
 export async function generateAssignmentLink(giver: string, receiver: string, receiverHint?: string, instructions?: string) {
-  const baseUrl = `${window.location.origin}${window.location.pathname.replace(/\/[^/]*$/, '')}`;
+  const baseUrl = new URL(import.meta.env.BASE_URL, window.location.origin);
+  const pairingUrl = new URL('pairing/', baseUrl);
   
   // If there's a hint, encrypt a JSON object
   const dataToEncrypt = receiverHint
@@ -19,7 +20,8 @@ export async function generateAssignmentLink(giver: string, receiver: string, re
     params.set('info', instructions.trim());
   }
 
-  return `${baseUrl}/pairing?${params.toString()}`;
+  pairingUrl.search = params.toString();
+  return pairingUrl.toString();
 }
 
 export function generateCSV(assignments: [string, string][]) {
@@ -27,4 +29,4 @@ export function generateCSV(assignments: [string, string][]) {
     .map(([giver, receiver]) => `${giver}\t${receiver}`)
     .join('\n');
   return `Giver\tReceiver\n${csvContent}`;
-} 
+}

@@ -29,11 +29,10 @@ const router = createBrowserRouter([{
   path: "/pairing.html",
   element: <Redirect to="/pairing" />
 }], {
-  // @ts-ignore
   basename: import.meta.env.BASE_URL,
 });
 
 const root = createRoot(document.getElementById("root")!);
 root.render(
   <RouterProvider router={router} />
-); 
+);
